@@ -16,6 +16,7 @@
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 	</properties>
 
+	<!-- Include the AWS SDK for Java Rekognition library -->
 	<dependencies>
 		<dependency>
 			<groupId>com.amazonaws</groupId>
@@ -24,6 +25,7 @@
 		</dependency>
 	</dependencies>
 
+	<!-- Tell Maven to build a fat JAR that includes all dependencies -->
 	<build>
 		<plugins>
 			<plugin>
